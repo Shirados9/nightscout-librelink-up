@@ -8,7 +8,7 @@
     "start": "npx ts-node --transpile-only src/index.ts",
     "start-dev": "npx ts-node src/index.ts",
     "start-heroku": "node dist/index.js",
-    "deploy": "npx tsc && node dist/index.js",
+    "deploy": "yarn && npx tsc && node dist/index.js",
     "lint": "npx eslint . --fix",
     "test": "jest --coverage --forceExit",
     "test:watch": "jest --watch"
